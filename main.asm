@@ -1709,8 +1709,342 @@ quinta_ite:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size	
-	jmp pregunta
 
+second_player_5:
+	imprime juega2,juega2_size
+	leer ingreso,1                            ; SELECCIONE LA PRIMERA
+	mov bl, [rsi]
+	mov r9b,'1'
+	cmp bl,r9b
+	jne etiqueta32
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta32:                                       ;SI SE SELECCIONA LA SEGUNDA
+	mov bl, [rsi]
+	mov r9b,'2'
+	cmp bl,r9b
+	jne etiqueta33
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta33:              ;SI SE ESCOGE EL TERCERO
+	mov bl, [rsi]
+	mov r9b,'3'
+	cmp bl,r9b
+	jne etiqueta34
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta34:	                       ;SI SE ESCOGE EL CUARTO
+	mov bl, [rsi]
+	mov r9b,'4'
+	cmp bl,r9b
+	jne etiqueta35
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx3,linx3_size 
+	imprime linx3,linx3_size 
+	imprime linx3,linx3_size 
+	imprime linx3,linx3_size 
+	imprime linx3,linx3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta35:	                       ;SI SE ESCOGE EL SEXTO
+	mov bl, [rsi]
+	mov r9b,'6'
+	cmp bl,r9b
+	jne etiqueta36
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx4,linx4_size 
+	imprime linx4,linx4_size 
+	imprime linx4,linx4_size 
+	imprime linx4,linx4_size 
+	imprime linx4,linx4_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta36:                            ;SELECCIONA SETIMO
+	mov bl, [rsi]
+	mov r9b,'7'
+	cmp bl,r9b
+	jne etiqueta37
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta37:                       ;SELECCIONA 8
+	mov bl, [rsi]
+	mov r9b,'8'
+	cmp bl,r9b
+	jne etiqueta38
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta38:
+	mov bl, [rsi]
+	mov r9b,'9'
+	cmp bl,r9b
+	jne etiqueta39
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta39:
+	mov r10b,'5'
+	cmp bl,r10b
+	je second_player_5
+	jmp pregunta
 
 ;############################## INICIANDO EN SEXTO CUADRO ##################################################
 
@@ -1750,6 +2084,341 @@ sexta_ite:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size	
+
+second_player_6:
+	imprime juega2,juega2_size
+	leer ingreso,1                            ; SELECCIONE LA PRIMERA
+	mov bl, [rsi]
+	mov r9b,'1'
+	cmp bl,r9b
+	jne etiqueta40
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta40:                                       ;SI SE SELECCIONA LA SEGUNDA
+	mov bl, [rsi]
+	mov r9b,'2'
+	cmp bl,r9b
+	jne etiqueta41
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta41:              ;SI SE ESCOGE EL TERCERO
+	mov bl, [rsi]
+	mov r9b,'3'
+	cmp bl,r9b
+	jne etiqueta42
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta42:	                       ;SI SE ESCOGE EL CUARTO
+	mov bl, [rsi]
+	mov r9b,'4'
+	cmp bl,r9b
+	jne etiqueta43
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx6,linx6_size 
+	imprime linx6,linx6_size 
+	imprime linx6,linx6_size 
+	imprime linx6,linx6_size 
+	imprime linx6,linx6_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta43:	                       ;SI SE ESCOGE EL SEXTO
+	mov bl, [rsi]
+	mov r9b,'5'
+	cmp bl,r9b
+	jne etiqueta44
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx5,linx5_size 
+	imprime linx5,linx5_size 
+	imprime linx5,linx5_size 
+	imprime linx5,linx5_size 
+	imprime linx5,linx5_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta44:                            ;SELECCIONA SETIMO
+	mov bl, [rsi]
+	mov r9b,'7'
+	cmp bl,r9b
+	jne etiqueta45
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime liny1,liny1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta45:                       ;SELECCIONA 8
+	mov bl, [rsi]
+	mov r9b,'8'
+	cmp bl,r9b
+	jne etiqueta46
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina2_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime liny2,liny2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta46:
+	mov bl, [rsi]
+	mov r9b,'9'
+	cmp bl,r9b
+	jne etiqueta47
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina2_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime lina3,lina3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta47:
+	mov r10b,'6'
+	cmp bl,r10b
+	je second_player_6
 	jmp pregunta
 
 ;############################## INICIANDO EN SETIMO CUADRO ##################################################
@@ -1790,6 +2459,342 @@ setima_ite:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size	
+
+
+second_player_7:
+	imprime juega2,juega2_size
+	leer ingreso,1                            ; SELECCIONE LA PRIMERA
+	mov bl, [rsi]
+	mov r9b,'1'
+	cmp bl,r9b
+	jne etiqueta48
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta48:                                       ;SI SE SELECCIONA LA SEGUNDA
+	mov bl, [rsi]
+	mov r9b,'2'
+	cmp bl,r9b
+	jne etiqueta49
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta49:              ;SI SE ESCOGE EL TERCERO
+	mov bl, [rsi]
+	mov r9b,'3'
+	cmp bl,r9b
+	jne etiqueta50
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta50:	                       ;SI SE ESCOGE EL CUARTO
+	mov bl, [rsi]
+	mov r9b,'4'
+	cmp bl,r9b
+	jne etiqueta51
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta51:	                       ;SI SE ESCOGE EL QUINTO
+	mov bl, [rsi]
+	mov r9b,'5'
+	cmp bl,r9b
+	jne etiqueta52
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta52:                            ;SELECCIONA SEXTO
+	mov bl, [rsi]
+	mov r9b,'6'
+	cmp bl,r9b
+	jne etiqueta53
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime lina1,lina1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta53:                       ;SELECCIONA 8
+	mov bl, [rsi]
+	mov r9b,'8'
+	cmp bl,r9b
+	jne etiqueta54
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx1,linx1_size
+	imprime linx1,linx1_size
+	imprime linx1,linx1_size
+	imprime linx1,linx1_size
+	imprime linx1,linx1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta54:
+	mov bl, [rsi]
+	mov r9b,'9'
+	cmp bl,r9b
+	jne etiqueta55
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta55:
+	mov r10b,'7'
+	cmp bl,r10b
+	je second_player_7
 	jmp pregunta
 
 ;############################## INICIANDO EN OCTAVO CUADRO ##################################################
@@ -1830,6 +2835,342 @@ octava_ite:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size	
+
+
+second_player_8:
+	imprime juega2,juega2_size
+	leer ingreso,1                            ; SELECCIONE LA PRIMERA
+	mov bl, [rsi]
+	mov r9b,'1'
+	cmp bl,r9b
+	jne etiqueta56
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta56:                                       ;SI SE SELECCIONA LA SEGUNDA
+	mov bl, [rsi]
+	mov r9b,'2'
+	cmp bl,r9b
+	jne etiqueta57
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta57:              ;SI SE ESCOGE EL TERCERO
+	mov bl, [rsi]
+	mov r9b,'3'
+	cmp bl,r9b
+	jne etiqueta58
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta58:	                       ;SI SE ESCOGE EL CUARTO
+	mov bl, [rsi]
+	mov r9b,'4'
+	cmp bl,r9b
+	jne etiqueta59
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta59:	                       ;SI SE ESCOGE EL QUINTO
+	mov bl, [rsi]
+	mov r9b,'5'
+	cmp bl,r9b
+	jne etiqueta60
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta60:                            ;SELECCIONA SEXTO
+	mov bl, [rsi]
+	mov r9b,'6'
+	cmp bl,r9b
+	jne etiqueta61
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime lina2,lina2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta61:                       ;SELECCIONA SETIMO
+	mov bl, [rsi]
+	mov r9b,'7'
+	cmp bl,r9b
+	jne etiqueta62
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx3,linx3_size
+	imprime linx3,linx3_size
+	imprime linx3,linx3_size
+	imprime linx3,linx3_size
+	imprime linx3,linx3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta62:          ;SELECCIONA NOVENO
+	mov bl, [rsi]
+	mov r9b,'9'
+	cmp bl,r9b
+	jne etiqueta63
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx4,linx4_size
+	imprime linx4,linx4_size
+	imprime linx4,linx4_size
+	imprime linx4,linx4_size
+	imprime linx4,linx4_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta63:
+	mov r10b,'8'
+	cmp bl,r10b
+	je second_player_8
 	jmp pregunta
 
 ;############################## INICIANDO EN NOVENO CUADRO ##################################################
@@ -1870,6 +3211,342 @@ novena_ite:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size	
+
+second_player_9:
+	
+	imprime juega2,juega2_size
+	leer ingreso,1                            ; SELECCIONE LA PRIMERA
+	mov bl, [rsi]
+	mov r9b,'1'
+	cmp bl,r9b
+	jne etiqueta64
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio
+	imprime liny1,liny1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta64:                                       ;SI SE SELECCIONA LA SEGUNDA
+	mov bl, [rsi]
+	mov r9b,'2'
+	cmp bl,r9b
+	jne etiqueta65
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio
+	imprime liny2,liny2_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta65:              ;SI SE ESCOGE EL TERCERO
+	mov bl, [rsi]
+	mov r9b,'3'
+	cmp bl,r9b
+	jne etiqueta66
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio
+	imprime liny3,liny3_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta66:	                       ;SI SE ESCOGE EL CUARTO
+	mov bl, [rsi]
+	mov r9b,'4'
+	cmp bl,r9b
+	jne etiqueta67
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime liny1,liny1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta67:	                       ;SI SE ESCOGE EL QUINTO
+	mov bl, [rsi]
+	mov r9b,'5'
+	cmp bl,r9b
+	jne etiqueta68
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime liny2,liny2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+
+	etiqueta68:                            ;SELECCIONA SEXTO
+	mov bl, [rsi]
+	mov r9b,'6'
+	cmp bl,r9b
+	jne etiqueta69
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime liny3,liny3_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime lina3,lina3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta69:                       ;SELECCIONA 7
+	mov bl, [rsi]
+	mov r9b,'7'
+	cmp bl,r9b
+	jne etiqueta70
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx6,linx6_size
+	imprime linx6,linx6_size
+	imprime linx6,linx6_size
+	imprime linx6,linx6_size
+	imprime linx6,linx6_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta70:
+	mov bl, [rsi]
+	mov r9b,'8'
+	cmp bl,r9b
+	jne etiqueta71
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio
+	imprime line1,line1_size ;inicio	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx5,linx5_size
+	imprime linx5,linx5_size
+	imprime linx5,linx5_size
+	imprime linx5,linx5_size
+	imprime linx5,linx5_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	
+	etiqueta71:
+	mov r10b,'9'
+	cmp bl,r10b
+	je second_player_9
 	jmp pregunta
 
 ;##############################   LOGICA PARA PRIMER MOVIMIENTO    #################################################
