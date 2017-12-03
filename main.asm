@@ -54,9 +54,9 @@ section .data
 	return_size: equ $-return
 	ending: db '                                                      GRACIAS POR JUGAR XD',0xa
 	ending_size: equ $-ending
-	encabe1: db 'VICTORIAS JUGADOR 1:',0xa
+	encabe1: db 'JUGADOR 1: *****',0xa
 	encabe1_size: equ $-encabe1
-	encabe2: db 'VICTORIAS JUGADOR 2:',0xa
+	encabe2: db 'JUGADOR 2:  ))) ',0xa
 	encabe2_size: equ $-encabe2
 	begin1: db 'REGLAS:  Cada una de las 9 casillas a continuación se enumeraran de izquierda a derecha de manera numericamente ascendetemente. Esto empezando por la fila superior',0xa
 	begin1_size: equ $-begin1
@@ -902,7 +902,7 @@ second_player_2:
 	imprime lina2,lina2_size 
 	imprime lina2,lina2_size 
 	imprime lina2,lina2_size 
-	imprime line1,line1_size	
+	imprime lina2,lina2_size	
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime line1,line1_size
@@ -929,12 +929,11 @@ second_player_2:
 	imprime line1,line1_size
 	imprime line1,line1_size
 	imprime begin1,begin1_size
+	jmp jugada_2_9
+
 	
 	etiqueta15:
-	mov r10b,'2'
-	cmp bl,r10b
-	je second_player_2
-	jmp pregunta
+	jmp jugada_2_9
 
 ;############################## INICIANDO EN TERCER CUADRO ##################################################
 
@@ -3809,6 +3808,13 @@ jugada_1_2:
 	imprime line1,line1_size
 	imprime begin1,begin1_size
 
+	imprime limpiar,tam_limpias
+	imprime barra,barra_size
+	imprime barra,barra_size
+	imprime gana1,gana1_size
+	imprime barra,barra_size
+	imprime barra,barra_size	
+
 	jmp creditos
 	
 	etiqueta1_2:
@@ -3819,20 +3825,199 @@ jugada_1_2:
 	jmp _start
 	
 
+jugada_2_9:
+	imprime juega1,juega1_size
+	leer ingreso,1                     ;Esta jugada continua si el jugador 1 selecciona 4
+	mov r9b,'4'
+	mov bl, [rsi]
+	cmp bl,r9b
+	jne etiqueta2_9
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime lina1,lina1_size  
+	imprime lina1,lina1_size 
+	imprime lina1,lina1_size 
+	imprime lina1,lina1_size 
+	imprime lina1,lina1_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	imprime juega2,juega2_size
+	
+	leer ingreso,1
+
+	mov r9b,'6'
+	mov bl, [rsi]
+	cmp bl,r9b
+	jne etiqueta2_9_4
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size  
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime liny3,liny3_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	imprime juega1,juega1_size
+	
+	leer ingreso,1
+
+	mov r9b,'7'
+	mov bl, [rsi]
+	cmp bl,r9b
+	jne etiqueta2_9_4_6
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size  
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	imprime juega2,juega2_size
+	
+	leer ingreso,1
+	
+	mov r9b,'3'
+	mov bl, [rsi]
+	cmp bl,r9b
+	jne etiqueta2_9_4_6_7
+	imprime limpiar,tam_limpias
+	imprime encabe1,encabe1_size
+	imprime encabe2,encabe2_size
+	imprime line1,line1_size
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size 
+	imprime lina2,lina2_size	
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size  
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime linx2,linx2_size 
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size	
+	imprime verti,verti_size
+	imprime verti,verti_size
+	imprime line1,line1_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime linx2,linx2_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime line1,line1_size
+	imprime begin1,begin1_size
+	imprime juega2,juega2_size
+		
+	imprime limpiar,tam_limpias
+	imprime barra,barra_size
+	imprime barra,barra_size
+	imprime gana2,gana2_size
+	imprime barra,barra_size
+	imprime barra,barra_size
+	jmp creditos
+	
+	etiqueta2_9:
+	etiqueta2_9_4:
+	etiqueta2_9_4_6:
+	etiqueta2_9_4_6_7:
+	jmp _start
+
 ;########################### LÓGICA PARA OPCIONES 2 Y 3 DEL MENU #########################################
 
 	
 
 creditos:
-	imprime limpiar,tam_limpias
-	imprime barra,barra_size
-	imprime barra,barra_size
-	imprime gana1,gana1_size
-	imprime barra,barra_size
-	imprime barra,barra_size
-
-
-
+	
 
 	imprime cred,cred_size
 	imprime cred1,cred1_size
